@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.hero-img{
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    height: 400px;
+    width: 600px; 
+    background-image: url('https://picsum.photos/600/400/?random');
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: 1s transform, 1s color 1s cubic-bezier(.56,.14,0,1.32);
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 36px;
+}
+.hero-bg{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+}
+.hero-img:hover{
+    transform: translate(-50%, -50%) rotate(-360deg);
+    color: yellow;
+}
